@@ -1,0 +1,25 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(51, 43, 43);
+    height: 80px;
+}
+
+div {
+    color: white;
+    display: flex;
+    margin-right: 30px;
+    gap: 200px;
+}
+
+img {
+    width: 30px;
+}

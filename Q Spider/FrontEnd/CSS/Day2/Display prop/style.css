@@ -1,0 +1,36 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* min-width: 50%; if we have to give compalsary width we used mai-width:; */
+/* or */
+/* flex-wrap:wrap; if we have to take content in the 50% 50%  */
+
+
+main {
+    display: flex;
+    justify-content: center;
+    border: 2px solid;
+    height: 200px;
+    align-items: center;
+    /* flex-wrap:wrap; */
+
+}
+
+div {
+    background-color: red;
+    min-width: 50%;
+}
+
+span {
+    background-color: yellow;
+    min-width: 50%;
+}
+
+section {
+    background-color: green;
+    min-width: 50%;
+}

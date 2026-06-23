@@ -1,0 +1,143 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+}
+
+nav {
+    border: 1px solid rgb(86, 85, 85);
+    display: flex;
+    height: 5vh;
+    justify-content: space-between;
+}
+
+#nav1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    /* border: 1px solid rgb(255, 249, 249); */
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+#nav2 {
+    width: 50%;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(126, 125, 125);
+}
+
+
+#nav3 {
+    width: 20%;
+    border: 1px solid rgb(144, 142, 142);
+}
+
+.main {
+    display: flex;
+    height: 92vh;
+    border: 2px solid rgb(244, 241, 241);
+}
+
+#main1 {
+    display: flex;
+    border: 1px solid rgb(122, 121, 121);
+    width: 25%;
+}
+
+.main-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.M-icon1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30%;
+    border: 1px solid rgb(133, 133, 134);
+
+}
+
+.M-icon2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 30%;
+    border: 1px solid rgb(150, 150, 151);
+}
+
+.icon {
+    height: 30px;
+    border: 1px solid rgb(249, 249, 249);
+}
+
+/* .M-icon1 {
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+
+} */
+
+
+.main-icon {
+    width: 10%;
+    border: 1px solid rgb(130, 130, 130);
+}
+
+.main-text {
+    width: 90%;
+    border: 1px solid rgb(125, 126, 125);
+}
+
+#main2 {
+    border: 1px solid rgb(141, 139, 139);
+    width: 75%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(113, 113, 112);
+
+}
+
+#footer2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(117, 116, 115);
+
+}
+
+.foot {
+    border: 1px solid rgb(110, 109, 109);
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,39 @@
+/* *{
+          universal selector//
+} */
+
+
+          /* Tag name Selector */
+div {  
+    background-color: red;
+    color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+          /* Id Selector */
+
+#Ele1 {
+    color: black;
+}
+
+
+
+        /* Class Selector */
+
+.Divs {
+    background-color: green;
+}
+
+
+          /* Grouping Selector */
+
+div,.divs,#Ele1 {
+
+}

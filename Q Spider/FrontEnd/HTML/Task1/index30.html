@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- Task 30: VS Code Homepage Clone (HTML + CSS Only)
+Objective
+Create the front page of VS Code like the one you're currently building.
+Requirements
+Navbar
+Include:
+VS Code logo
+File
+Edit
+Selection
+View
+Go
+Run
+Terminal
+Help
+Use Flexbox to align items.
+Left Activity Bar
+Add 6 icons:
+Explorer
+Search
+Source Control
+Run & Debug
+Extensions
+Tools
+Place them vertically. -->
+
+      <nav>
+        <section style="display: flex; align-items: center; justify-content:space-evenly;" class="nav1">
+            
+            <img src="data:image/png;base64,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" alt="">
+            <div navsec>file</div>
+            <div navsec>edit</div>
+            <div navsec>selection</div>
+            <div navsec>view</div>
+            <div navsec>go</div>
+            <div navsec>run</div>
+            <div navsec>Terminal</div>
+            <div navsec>help</div>
+        </section>
+      </nav>
+
+      <aside style="display: flex; flex-direction: column; justify-content:space-evenly; align-items:start; height: 95
+      vh;">
+        <div>Explore</div>
+        <div>Search</div>
+        <div>Source control</div>
+        <div>Run</div>
+        <div>Tools</div>
+      </aside>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
