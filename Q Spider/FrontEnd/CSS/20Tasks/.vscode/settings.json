@@ -1,0 +1,10 @@
+{
+    "powermode.enabled": true,
+    "powermode.presets": "flames",
+    "powermode.explosions.offset": 0.35,
+    "powermode.explosions.size": 6,
+    "powermode.shake.intensity": 0,
+    "powermode.shake.enabled": false,
+    "powermode.combo.location": "editor",
+    "powermode.explosions.enabled": true
+}

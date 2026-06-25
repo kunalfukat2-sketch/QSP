@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <!-- //! task 1 -->
+    
+    <!-- Task 1: Name Boxes in a Row
+    Input:-
+    
+    Kunal
+    Rahul
+    Priya
+    Neha
+
+Output
+
+Four boxes displayed in one row with equal spacing.
+
+Practice
+display: flex
+gap -->
+
+<!-- 
+    <main>
+    <div>
+        <h3>Kunal</h3>
+        <h3>Rahul</h3>
+        <h3>Priya</h3>
+     <h3>Neha</h3>
+    </div>
+</main> -->
+
+<!-- //! task 2 -->
+<!-- Task 2: Navigation Menu
+Input
+Home
+About
+Services
+Contact
+Output
+
+All menu items in a single row.
+
+Practice
+display: inline-block
+display: flex -->
+<!-- 
+    <nav>
+        <div>Home</div>
+        <span>About</span>
+        <p>Services</p>
+        <span>Contact</span>
+        <div>Output</div>
+    </nav> -->
+    
+    <!-- //! task 3 -->
+
+    <!-- Task 3: Company Header
+Input
+Logo: CodeTech
+
+Menu:
+Home
+Courses
+Blog
+Contact
+Output
+
+Logo on left and menu on right.
+
+Practice
+justify-content: space-between -->
+
+<!-- 
+<nav>
+     <h3>CodeTech</h3>
+    <div>
+
+        <p>Home</p>
+        <p>Courses</p>
+        <p>Blog</p>
+        <p>Contact</p>
+        <p>Output</p>
+
+    </div>
+</nav> -->
+
+ <!-- //! task 4 -->
+<!-- Task 4: Center One Box
+Input
+
+A box containing:
+
+Welcome
+Output
+
+Box exactly in center of page.
+
+Practice
+justify-content: center
+align-items: center -->
+<!-- 
+<main>
+    <div>
+        <b>Welcome:  To my world </b>
+        <b>Output:My  world</b>
+    </div>
+</main> -->
+ <!-- //! task 5 -->
+
+ <!-- Task 5: Student Cards
+Input
+Name: Kunal
+Branch: ENTC
+
+Name: Rahul
+Branch: CSE
+
+Name: Priya
+Branch: IT
+Output
+
+Cards displayed side by side.
+
+Practice
+flex row -->
+
+<!-- <main>
+    <div>
+        <p>Name: Kunal</p>
+        <p>Branch: ENTC</p>
+    </div>
+    <div>
+        <p>Name: Rahul</p>
+        <p>Branch: CSE</p>
+    </div>
+    <div>
+        <p>Name: Priya</p>
+        <p>Branch: IT</p>
+    </div>
+</main> -->
+
+ <!-- //! task 6 -->
+
+ <!-- Task 6: Vertical Menu
+Input
+Dashboard
+Profile
+Settings
+Logout
+Output
+
+Items displayed vertically.
+
+Practice
+flex-direction: column -->
+<!-- 
+<main>
+    <p>Dashboard</p>
+    <p>Profile</p>
+    <p>Settings</p>
+    <p>Logout</p>
+    <p>Output</p>
+</main> -->
+
+<!-- //! task 7 -->
+
+<!-- ask 7: Reverse Menu
+Input:
+
+practice
+Home
+About
+Contact
+
+Output:
+Display as:
+
+Contact
+About
+Home
+Practice
+
+flex-direction: row-reverse -->
+
+<!-- <div class="menu">
+        <div>Home</div>
+        <div>About</div>
+        <div>Contact</div>
+    </div> -->
+
+<!-- //! task 8 -->
+
+<!-- Task 8: Team Members
+Input
+
+8 team cards.
+
+Output
+
+Cards move to next row automatically.
+
+Practice
+flex-wrap -->
+<!-- 
+    <main>
+        <div>person1</div>
+        <div>person2</div>
+        <div>person3</div>
+        <div>person4</div>
+        <div>person5</div>
+        <div>person6</div>
+        <div>person7</div>
+        <div>person8</div>
+    </main> -->
+
+    <!-- //! task 9 -->
+
+    <!-- Input
+    Task 9: Product Gallery
+    
+    10 products:
+
+Laptop
+Mouse
+Keyboard
+Monitor
+Phone
+Printer
+Tablet
+Speaker
+Camera
+Watch
+Output
+
+Products wrap automatically.
+
+Practice
+flex-wrap
+gap -->
+
+<!-- 
+<main>
+    <div>Laptop</div>
+    <div>Mouse</div>
+    <div>Keyboard</div>
+    <div>Mointor</div>
+    <div>Phone</div>
+    <div>Printer</div>
+    <div>Tablet</div>
+    <div>Speaker</div>
+    <div>Camera</div>
+    <div>Watch</div>
+</main> -->
+
+<!-- //! task 10 -->
+
+<!-- Task 10: Social Icons
+Input
+Facebook
+Instagram
+Twitter
+LinkedIn
+YouTube
+
+Output
+
+Icons equally spaced.
+
+Practice
+justify-content: space-evenly -->
+
+<!-- 
+
+<nav>
+    <div>Facebook</div>
+    <div>Instagram</div>
+    <div>Twitter</div>
+    <div>LinkedIn</div>
+    <div>YouTube</div>
+</nav> -->
+
+<!-- //! task 11 *****************************************************--> 
+
+<!-- Task 11: Search Bar Header
+Input:-
+Logo
+Search Box
+Profile
+Output
+
+Three items in one row.
+
+Practice
+align-items
+space-between -->
+      
+     <!-- <nav>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKMAAACUCAMAAADIzWmnAAAAaVBMVEX/////AAD/ycn/wsL//Pz/7e3/4eH/9PT/0ND/2tr/PDz/NDT/Nzf/ZWX/UVH/QED/g4P/oaH/RET/Jib/ubn/5ub/srL/mpr/amr/cnL/h4f/Wlr/S0v/ICD/ra3/jo7/eXn/lJT/EBDAin14AAACkUlEQVR4nO2afY+iMBCHbbcFioKgCPgu+/0/5FX0dm9vL07RmUUvvyf+YbQJT9KWmU5nMgEAAAAAAAAAAAAAAAAAAAAAgLsxxsRnrF3Z1RVrbf+b/28srdg6nVR12XSb4tRm2TbPd4s0naWz/uO/pOlil+d5lrWnYtM1dV0lycr+kLB1ZZuqe0nb0llpxXq7v1vwwj47iBpG2YOCF7JITtHNWBSVmjkpxThnUlQqj2UUzZFNUalOZotHU0bHqcySLBkVlSpFHHesjjsJRcOqqJTEgkyYHRMBxwOzo0S06ZgdO35Fc2J2PAk4rpkd1/ybJuZJJz7J+MNhvCWeWTXD0sotv6OlEopk4gYt2Zw/1yUdtV+zekBmJOAYLWhHb1lSwz5Y8GcV0TzE0Y8LnfA5v6OjdoT+GLl9D3FM+XPxZBnqODF1yA5f8gfsAY5+g3XP7+gnfE1N+J7fUVPn6q+OE1MRO3yv//2gB3gjFP929BNOZHNvT+B4fg/dmvAncbyZKz2Do+1ub5vxHU1NRcXRHZOWGj+2YxRSduF31NQ7+dMxPgRVXcZ01FTGfkEgzoTGwuDcbLR4HTfBZVQBxyggfzSaSoT/QKCWS+bh/sw16HgrkIdbqrRXdcNqqDv+Mxd5vh6KwPna0IFjGK1AAbJgdiz4FZnL4TIF8YrZsRJwdMyOElddr1Czf4W7j5e4Q4qorGIIS5m7OMP5hiyE2hYY74YFgvWVF7hjpw71wawFexU8VfvoLfa0lYgwX4hdtcnv7U3Z58fKCbUpfDe1Tuu6PjTHTbHue5DyeeqZXuh7kPoWpKwtimNzOPcgOftTdt+59nJZzyq68LuXy4zYywUAAAAAAAAAAAAAAAAAAAAA+B/4Bfu7J2Q1xOv9AAAAAElFTkSuQmCC" alt="">
+        <input type="text" placeholder="   Search The Youtube                                                                                                          🔍 ">
+        <img src="https://png.pngtree.com/png-vector/20191110/ourmid/pngtree-avatar-icon-profile-icon-member-login-vector-isolated-png-image_1978396.jpg" alt="">
+
+     </nav> -->
+
+     <!-- //! task 12 -->
+
+     <!--//* ask 12: Movie Cards
+Input:-
+KGF
+Pushpa
+Animal
+Leo
+Jawan
+
+Output:-
+Movie cards in one row.
+
+Practice
+gap -->
+<!-- 
+<main>
+    <p>KGF</p>
+    <p>Pushpa</p>
+    <p>Animal</p>
+    <p>Leo</p>
+    <p>Jawan</p>
+
+</main> -->
+ <!-- //! task 13 -->
+          
+<!-- Task 13: Login Page
+Input
+Username
+Password
+Login Button
+Output
+
+Centered vertically and horizontally.
+
+Practice
+full page flexbox -->
+<!-- 
+      
+          <form action="">
+            <div>
+              <label for="UN">Enter a Username: </label>
+              <input type="text" placeholder="Username" id="UN">
+              <br>
+               <label for="Pass">Enter a Password: </label>
+              <input type="text" placeholder="Password" id="Pass"  >
+              <br>
+              <button type="submit">Login</button>
+            </div>
+          </form> -->
+      
+ <!-- //! task 14 -->
+<!-- 
+ Task 14: Chat Application
+Input
+
+Messages:
+
+Hello
+How are you?
+I'm Fine
+Good
+Output
+
+Messages stacked vertically.
+
+Practice
+textarea , form
+flex-direction: column -->
+
+<!-- 
+<form action="">
+    <textarea name="" id="">
+        Hello
+        How are you?
+        I'm Fine
+        Good
+    </textarea>
+</form> -->
+
+ <!-- //! task 15 -->
+      <!-- Task 15: Sidebar Layout
+Input
+
+Sidebar:
+
+Home
+Profile
+Settings
+
+Content:
+
+Welcome User
+Output
+
+Sidebar left, content right.
+
+Practice
+flex row -->
+
+    <!-- <div class="container">
+        <div class="sidebar">
+            <p>Home</p>
+            <p>Profile</p>
+            <p>Settings</p>
+        </div>
+
+        <div class="content">
+            <h2>Welcome User</h2>
+        </div>
+    </div> -->
+
+    <!-- //! task 16 -->
+
+                    <!-- Task 16: Faculty Section
+              Input
+              
+              6 faculty cards.
+              
+              Each contains:
+              
+              Name
+              Subject
+              Output
+              
+              Two rows.
+              
+              Practice
+              flex-wrap -->
+<!-- 
+              <main>
+                <div>
+                    <p>Name</p>
+                    <p>Subject</p>
+                    <p>Output</p>
+                </div>
+                <div>
+                     <p>Name</p>
+                    <p>Subject</p>
+                    <p>Output</p>
+                </div>
+                <div>
+                     <p>Name</p>
+                    <p>Subject</p>
+                    <p>Output</p>
+                </div>
+                <div>
+                    <p>Name</p>
+                    <p>Subject</p>
+                    <p>Output</p>
+                </div>
+                <div>
+                     <p>Name</p>
+                    <p>Subject</p>
+                    <p>Output</p>
+                </div>
+                <div>
+                     <p>Name</p>
+                    <p>Subject</p>
+                    <p>Output</p>
+                </div>
+              </main> -->
+
+              <!-- //! task 17 -->
+
+              <!-- Task 17: Food Menu
+Input
+Pizza
+Burger
+Sandwich
+Pasta
+Fries
+Coffee
+Output
+
+Items arranged with equal gaps.
+
+Practice
+gap -->
+<!-- 
+    <main>
+        <p>Pizza</p>
+        <p>Burger</p>
+        <p>Sandwich</p>
+        <p>Pasta</p>
+        <p>Fries</p>
+        <p>Coffee</p>
+    </main>-->
+
+    <!-- //! task 18 -->
+
+    <!-- Task 18: Dashboard Stats
+Input
+Users
+Orders
+Revenue
+Profit
+Output
+
+Cards evenly distributed.
+
+Practice
+space-around
+space-evenly -->
+<!-- 
+<main>
+    <div>users</div>
+    <div>Orders</div>
+    <div>Revenue</div>
+    <div>profit</div>
+</main>
+ -->
+
+     <!-- //! task 19-->
+      <!-- Task 19: YouTube Layout
+Input
+
+Sidebar:
+
+Home
+Shorts
+Subscriptions
+
+Video Cards:
+
+Video 1 to Video 8
+Output
+
+Sidebar + video grid.
+
+Practice
+nested flexbox -->
+<!--       
+      <main>
+           <section class="nav">
+            <div></div>
+           </section>
+           <section class="mainsec2">
+            <div ></div>
+            <div ></div>
+            <div ></div>
+           </section>
+           <section class="mainsec3">
+            <div class="sec3"></div>
+            <div class="sec3"></div>
+            <div class="sec3"></div>
+            <div class="sec3"></div>
+            <div class="sec3"></div>
+            <div class="sec3"></div>
+           </section>
+      </main>
+ -->
+<!-- //! task 20-->
+ Task 20: Spotify Layout
+Input
+
+Sidebar:
+
+Home
+Search
+Library
+
+Playlist Cards:
+
+Playlist 1-10
+Practice
+nested flexbox
+wrap
+
+
+
+<div class="container">
+
+        <div class="sidebar">
+            <h3>Home</h3>
+            <h3>Search</h3>
+            <h3>Library</h3>
+        </div>
+
+        <div class="main">
+
+            <div class="card">Playlist 1</div>
+            <div class="card">Playlist 2</div>
+            <div class="card">Playlist 3</div>
+            <div class="card">Playlist 4</div>
+            <div class="card">Playlist 5</div>
+            <div class="card">Playlist 6</div>
+            <div class="card">Playlist 7</div>
+            <div class="card">Playlist 8</div>
+            <div class="card">Playlist 9</div>
+            <div class="card">Playlist 10</div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+
