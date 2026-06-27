@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#box {
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-name: Box;
+}
+
+@keyframes Box {
+
+    1% {
+        background-color: yellow;
+        transform: rotate(45deg);
+    }
+
+    20% {
+        background-color: green;
+        transform: rotate(60deg);
+
+    }
+
+    40% {
+        background-color: maroon;
+        transform: rotate(90deg);
+
+    }
+
+    60% {
+        background-color: darkblue;
+        transform: rotate(120deg);
+
+    }
+
+    80% {
+        background-color: aqua;
+        transform: rotate(150deg);
+    }
+
+    100% {
+        background-color: orange;
+        transform: scale(180deg);
+    }
+
+}

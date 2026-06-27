@@ -1,0 +1,76 @@
+* {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.navdiv1 {
+    height: 100%;
+    width: 400px;
+    background-image: url(./assets/amazon\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navdiv2 {
+    height: 80%;
+    width: 700px;
+    background-image: url(./assets/search\ bar.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navdiv3 {
+    height: 82%;
+    width: 400px;
+    background-image: url(./assets/amazon\ right\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    height: 6.5vh;
+    width: 100%;
+    background-color: #090127;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+}
+
+#container {
+    height: 800px;
+    width: 100%;
+    border: 1px solid;
+    margin-top: 35px;
+
+
+
+}
+
+#container>img {
+    width: 100%;
+}
+
+
+#cards-container {
+    height: 400px;
+    width: 98.8%;
+    border: 2px solid rgb(63, 57, 57);
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.box {
+    height: 350px;
+    width: 260px;
+    border: 1px solid blue;
+    background-image: url(https://m.media-amazon.com/images/I/61dVylpOExL._AC_UL320_.jpg);
+}

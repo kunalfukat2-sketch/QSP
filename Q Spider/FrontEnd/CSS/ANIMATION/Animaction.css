@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+}
+
+#box {
+    height: 1500px;
+    width: 1500px;
+    background-color: red;
+    animation-name: SujitBaby;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes SujitBaby {
+
+    to {
+        height: 50px;
+        width: 50px;
+        transform: rotate(360deg);
+
+    }
+
+}
