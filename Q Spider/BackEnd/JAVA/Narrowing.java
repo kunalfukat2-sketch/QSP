@@ -19,5 +19,9 @@ class  Narrowing
 		 
 		 byte b1 = (byte) 200;
 		 System.out.println(b1);
+		 
+		 
+		 
+		 
 	}
 }

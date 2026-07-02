@@ -1,0 +1,70 @@
+class  Narrowing2
+{
+	public static void main(String[] args) 
+	{
+		// // Narrowing :- Converting Larger type data into a small type data, using type cast opeter.// //
+		
+		// Convert Double to into Small type data (Small datatypes)..
+		
+		double d = 65.984798560835763;
+		
+		byte b = (byte) d;
+		System.out.println(b); //11
+		
+		short s = (short) d;
+		System.out.println(s); //11
+		
+		int i = (int) d;
+		System.out.println(i); //11
+		
+		long l = (long) d;
+		System.out.println(l); //11
+		
+		float f = (float) d;
+		System.out.println(f);// 11.984798
+		
+		char c = (char) d;
+		System.out.println(c);// blank output if i will give 11 becoz 0-32 is non printable values.
+		
+		
+		
+		
+		
+		// 
+		
+		short s1 = 100;
+		byte b2 = (byte) s1;
+		System.out.println(b2); // 100
+		
+		int in = 999;
+		byte b3 = (byte) in;
+		System.out.println(b3); //-25
+		
+		
+		
+		double d5 = 10;
+		System.out.println(d5); // 10.0
+		
+		
+		// convert byte to char 
+		
+		byte b5 = 70;
+		char c5 = (char) b5;
+		System.out.println(c5);  //F
+		
+		// Can char Store Nubmers yes
+		
+		
+		char Ch = 71;
+		System.out.println(Ch);   //G
+		
+		    
+		
+		
+		
+		short s1 = 130;
+		char ch3 = (char) s1;
+		System.out.println(ch3);
+		
+	}
+}

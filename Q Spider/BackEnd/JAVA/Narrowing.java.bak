@@ -18,6 +18,6 @@ class  Narrowing
 		 System.out.println(c);
 		 
 		 byte b1 = (byte) 200;
-		 Syetem.out.println(b1);
+		 System.out.println(b1);
 	}
 }
