@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+
+* {
+    font-family: "Geist Pixel", sans-serif;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* ==========================
+   Mobile Responsive
+========================== */
+
+@media screen and (max-width:768px) {
+
+
+    aside {
+        display: none;
+    }
+
+    #mainsec {
+        width: 98%;
+        font-size: 9px;
+        overflow: auto;
+
+    }
+
+    #navbar {
+        width: 3889x;
+        position: fixed;
+        position: relative;
+    }
+
+    #search {
+        display: none;
+    }
+
+    #divheading {
+        color: green;
+    }
+
+    #downlode,
+    #sec4,
+    #sec5,
+    #divnon {
+        display: none;
+    }
+
+    #ind {
+        display: none;
+    }
+
+
+    footer {
+        display: none;
+    }
+
+    main {
+        height: 110vh;
+    }
+
+    #secnav {
+        width: 250px;
+    }
+
+    .divh {
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .divhh {
+        font-size: 8px;
+    }
+
+    .gap-2 {
+        width: 150%;
+    }
+
+
+
+}

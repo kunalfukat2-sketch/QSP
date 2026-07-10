@@ -1,0 +1,47 @@
+
+// Pass or Fail
+
+import java.util.Scanner;
+ class  PassFail
+ {
+ 	public static void main(String[] args) 
+ 	{
+ 		Scanner sc = new Scanner(System.in);
+ 		
+ 		System.out.print("Enter a Marks:");
+ 		int marks = sc.nextInt();
+		
+ 		
+ 		if ( marks>=35)
+ 		{
+ 			
+ 		  System.out.println("You Pass the Exam With " +marks+ " " + "Makrs");
+ 			  
+ 		}
+ 		else
+ 			{
+ 		   		System.out.println("You Fail the exam");
+ 		}
+ 	}
+}
+
+ //By using Conditional Operetors 
+
+ 
+import java.util.Scanner;
+
+class PassFail
+{
+	public static void main(String[] args)
+	{
+		Scanner sc = new Scanner(System.in);
+ 		
+ 		System.out.print("Enter a Marks : ");
+ 		int makrs = sc.nextInt();
+		
+		String result = (marks>=35)?("Pass"):("Fail");
+		System.out.println(result);
+		
+		
+	}
+}
