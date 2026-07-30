@@ -1,0 +1,12 @@
+// print HI 5 times using for loop
+
+class For1
+{
+	public static void main(String[] args) 
+	{
+		for (int times=0 ; times<5 ; times++ )
+		{
+			System.out.println("Hi");
+		}
+	}
+}

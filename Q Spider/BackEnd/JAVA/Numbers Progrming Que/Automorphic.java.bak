@@ -1,0 +1,37 @@
+import java.util.Scanner;
+class Automorphic 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Number :");
+		int num = sc.nextInt();
+		
+		int square = num * num;
+		
+		int den = 1;
+		
+	                                                             //int temp =num;	
+		                                                         //while (temp!=0)
+		                                                         //{
+		                                                         //  den = den*10;
+		                                                         //  temp/=10;
+		                                                         //}
+			
+		
+		
+		for (int i = num ; i !=0 ; i/=10 )
+		{
+			den = den*10;
+		}
+		
+		if (square % den == num)
+		{
+			System.out.println("It  is a Automorphic Number");
+		}
+		else
+		{
+			System.out.println("It  is NOt a Automorphic Number");
+		}
+	}
+}

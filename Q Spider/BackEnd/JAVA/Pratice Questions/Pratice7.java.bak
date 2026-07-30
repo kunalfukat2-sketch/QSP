@@ -1,0 +1,10 @@
+ // Question --> Using a DO  WHILE loop statement Taking a input from the user to print a table 
+
+import java.util.Scanner;
+class  
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello World!");
+	}
+}

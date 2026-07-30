@@ -1,0 +1,26 @@
+
+// print a hi for 5 times
+
+class WhileLoop1 
+{
+	public static void main(String[] args) 
+	{
+		 int times = 0;
+		 
+		 while (times<5)
+		 {
+			 System.out.println("Hi");
+			 times++;
+		 }
+		 
+		 
+		// initilazation;
+		// 
+		// while (condition)         ------------ While loop Syntax
+		// {
+		//	 //Statements;
+		// }
+		
+		
+	}
+}

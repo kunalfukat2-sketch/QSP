@@ -1,0 +1,98 @@
+//Find The Maximum (Largest) Digit of Given Number
+
+import java.util.Scanner;
+class MaxOfNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a number:");
+		int num = sc.nextInt();
+		
+		int max = 0;
+		
+		 if (num < 0 )
+	     { 
+	    	 num = num * (-1);
+	     }
+	     
+	     if (num == 0)
+	     {
+	    	 max = 0;
+	     }
+	     
+
+		while (num!=0)
+		{
+		   int last = num % 10;
+		   
+		   if (last>max)
+		   {
+			   max = last;
+		   }
+			   
+		    num = num/10;
+		}
+		
+		System.out.println(max);
+	}
+}
+
+
+// Other way optimise code
+
+
+//     int num = sc.nextInt();
+//	 
+//	 int max = 0;
+//	 
+//	 if (num < )
+//	 {
+//		 num = num * (-1);
+//	 }
+//	 
+//	 if (num == 0)
+//	 {
+//		 max = 0;
+//	 }
+//	 
+//	 while (num!=0)
+//	 {
+//		 int last = num % 10;
+//		 
+//		 if ( last > max)
+//		 {
+//			 max = last;
+//		 }
+//		 
+//		 num/=10;
+//		 
+//	 }
+//	 
+//	 System.out.println(max);
+//
+//
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

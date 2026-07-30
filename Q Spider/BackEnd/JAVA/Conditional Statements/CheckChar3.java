@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class  CheckChar3
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.print("Enter a Charachter :");
+		char ch = sc.next().charAt(0);
+		
+		 
+		 String result = (ch>='A' && ch<='Z')?"The Charachter is UpperCase":((ch>='a' && ch<='z')?"The Charachter is in LOwercase ":((ch>='0' && ch<='9')?"The Charachter is Digit":"The Charachter is Special Charachters"));
+		 
+		  
+		 System.out.println(result);
+		
+	}
+}

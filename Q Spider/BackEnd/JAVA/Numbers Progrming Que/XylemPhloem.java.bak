@@ -1,0 +1,54 @@
+// Check the num is  Xylem or Phloem
+
+import java.util.Scanner;
+class XylemPhloem 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Number :");
+		int num = sc.nextInt();
+		
+		int sumOfMid = 0;
+	    
+	    int sumOfEnd = num % 10;
+	          	        
+		
+		if (num<0)
+		{
+			System.out.println("The -ve Number not Allowed");
+		}
+		else
+		{
+			if (num<100)
+			{
+				System.out.println("The Number is Phloem");
+			}
+		    else
+			{
+	          	num = num / 10; 
+				 
+	          	while ( num > 9)
+	          	{
+	          		int last = num % 10;
+	          		
+	          		sumOfMid = sumOfMid + last;
+	          		
+	          		num /= 10;
+	          	}
+	          	
+	          	sumOfEnd = sumOfEnd + num;
+	          	
+	          	if ( sumOfEnd == sumOfMid)
+	          	{
+	          		System.out.println(" The Number is Xylem");
+	          	}
+	          	else
+	          	{
+	          		System.out.println("The number is Phloem");
+	          	}
+			}
+		
+		}
+	}
+}

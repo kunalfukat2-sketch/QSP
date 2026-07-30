@@ -1,0 +1,26 @@
+// sum of all the digits of given numbers
+
+import java.util.Scanner;
+
+class SumOfAllDigits 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter A number :");
+		
+		int num = sc.nextInt();
+		int sum=0;
+		
+		
+		while (num!=0)
+		{    
+			int last = num %10;
+		     sum+=last;
+	
+			num/=10;
+		}
+		
+				System.out.println(sum);
+	}
+}

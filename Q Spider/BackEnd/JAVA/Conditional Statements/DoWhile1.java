@@ -1,0 +1,17 @@
+//print hi 5 times using do while loop
+class  DoWhile1
+{
+	public static void main(String[] args) 
+	{
+		int times = 0;
+		
+		do
+		{
+			System.out.println("Hi");
+			
+			times++;
+		}
+		while (times<5);
+			
+	}
+}

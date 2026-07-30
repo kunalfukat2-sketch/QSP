@@ -1,0 +1,61 @@
+import java.util.Scanner;
+class TwinPrime
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter a Fisrt Number :");
+		int num1 = sc.nextInt();
+		
+		System.out.print("Enter a Second Number :");
+		int num2 = sc.nextInt();
+		
+		int large = num1>num2 ? num1 : num2 ;
+		int small = num1<num2 ? num1 : num2 ;
+		
+		if (large - small == 2)
+		 {
+		    
+			int count1 = 0;
+		    
+		    for (int i = 2 ; i < num1 ; i++ )
+		    {
+		    	if ( num1 % i == 0)
+		    	{
+		    		count1 ++;
+		    		break;
+		    	}
+		    }
+		    
+		    int count2 = 0 ;
+		    	
+		    for (int i = 2; i < num2 ; i++ )
+		    {
+		    	if (num2 % i == 0)
+		    	{
+		    		count2 ++;
+		    		break;
+		    	}
+		    }
+		    
+		    if ( count1 == 0 && count2 == 0 && large - small == 2)
+		    {
+		    	System.out.println(" Twin Prime Numbers");
+		    }
+		    
+		    else
+		    {
+		    	System.out.println(" Not A Twin Prime Numbers");		
+		    }
+		    	
+		  }
+		else
+		{
+			System.out.println(" Not A Twin Prime Numbers");
+		}
+		
+	}
+}
+
+

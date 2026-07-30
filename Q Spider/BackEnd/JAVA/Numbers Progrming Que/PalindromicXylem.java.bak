@@ -1,0 +1,46 @@
+
+import java.util.Scanner;
+class PalindromicXylem 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter A Number :");
+		int num = sc.nextInt();
+		
+		
+		int rev = 0;
+		int temp = num;
+		
+		while (temp!=0)
+		{
+			int last = temp % 10;
+			
+			rev = rev * 10 + last;
+			
+			temp = temp/10;
+		}
+		
+		if (rev == temp)
+		{
+			int sumOfMid = 0;
+		    int sumOfEnd = num%10;
+			num = num/10;
+			
+			while (num>9)
+			{
+				int last = num %10;
+				sumOfMid += last;
+				num/=10;
+			}
+			sumOfEnd += num;
+			
+			System.out.println("The num is PalindromicXylem");
+			
+		}
+		else
+		{
+			System.out.println("The num is Not a PalindromicXylem");
+		}
+	}
+}

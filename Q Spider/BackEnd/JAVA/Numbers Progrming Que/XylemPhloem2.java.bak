@@ -1,0 +1,52 @@
+import java.util.Scanner;
+class XylemPhloem2
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Number :");
+		int num = sc.nextInt();
+		
+		if (num < 0 )        //------Negitive numbers are not allowed in Xylem ......
+		{
+			System.out.println("Negitive numbers are not allowed");
+		}
+		else
+		{
+			if (num<100)  ////// ---- The Xylem number is not a double digit ......
+			{
+				System.out.println("The number is a Phloem");
+			}
+			else
+			{
+				
+	          int sumOfMid = 0;
+	        	
+	          int sumOfEnd = num%10;
+	        	     num/=10;
+	        		 
+	        		
+	        	while (num>9)
+	        	{
+	        		int last = num%10;
+					sumOfMid += last;
+	        		num/=10;
+	        		
+	        	}
+	        	
+	        	sumOfEnd += num;
+	        	
+	        	if ( sumOfEnd == sumOfMid)
+	        	{
+	        		System.out.println("The number is xylem");
+	        	}
+	        	else
+	        	{
+	        		System.out.println("The  number is phloem");
+	        	}
+	        }
+	     }
+		
+	}
+	
+}	

@@ -1,0 +1,18 @@
+// print the reverse  table of 7  using all loops
+
+
+class Pratice3
+{ 
+	public static void main(String [] agrs)
+		
+	{
+		int i = 10;
+		
+		do
+		{
+			System.out.println(i*7);
+			i--;
+		}
+		while (i>=1 k);
+	}
+}

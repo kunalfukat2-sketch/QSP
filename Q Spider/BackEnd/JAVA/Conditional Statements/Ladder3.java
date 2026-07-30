@@ -1,0 +1,40 @@
+
+// Bill Calculaction on The bases Of unit
+
+import java.util.Scanner;
+class  Ladder3
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Bill Units :");
+		int units = sc.nextInt();
+		double bill = 0.0;
+		
+		if(units<=0)
+		{
+			System.out.println("Your NO need to pay the bill");
+		}
+		else if (units>0 && units<=100)
+		{
+			bill = units*3.25;
+		}
+		
+		else if (units>101 && units<=300)
+		{
+			bill = units*6.14;	
+		}
+		
+		else if (units>301 && units<=500)
+		{
+			bill = units*8.45;
+		}
+		
+		else
+		{  
+			bill = units*9.56;
+		}
+		
+		System.out.println("Your Total Bill Amount is "+""+bill+"And total  burned units are "+" "+units+"");
+	}
+}

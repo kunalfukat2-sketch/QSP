@@ -1,0 +1,49 @@
+import java.util.Scanner;
+class  Ladder1
+{    
+	// Tax Slab
+	
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Annual Income : ");
+		
+		long income = sc.nextLong();
+		
+		double amount =0.0;
+		
+		if( income>0 && income<400000)
+		{
+			amount = income*0.0;
+			System.out.println("The Amount has Zero Tax ");
+		}
+		else if( income>=400001 && income<800000)
+		{
+			amount = income*0.05;
+		}
+		else if(income>=800001 && income<1200000)
+		{
+			amount = income*0.1;
+		}
+		else if(income>=1200001 && income<1600000)
+		{
+			amount = income*0.15;
+		}
+		else if(income>=1600001 && income<20000000)
+		{
+			amount = income*0.2;
+		}
+		else if(income>=2000001 && income<2400000)
+		{
+			amount = income*0.25;
+		}
+		else
+		{
+			amount = income*0.3;
+			System.out.println("Your income is Above 2400001L so You have to Pay 30% Tax");
+		}
+		
+		System.out.println( " The Tax is "+amount+" "+" On your income" );
+		
+	}
+}

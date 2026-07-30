@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+// Weekly study time table using Switch Statements
+
+class  Switch1
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter A Day :");
+		
+		String day = sc.next();
+		
+		switch (day)
+		{
+		case "monday" : {
+			System.out.println("You Have To Study Java");
+		}
+		
+		break;
+		
+		case "tuesday" :{
+			System.out.println("You Have To Study SQL");
+		}
+		
+		break;
+		
+		case "wednesday" : 
+		{
+			System.out.println("You Have To Study JS");
+		}
+		
+		break;
+		
+		case "thursday" :
+		{
+			System.out.println("You Have To Study React.js");
+		}
+		
+		break;
+		
+		case "friday" :
+		{
+			System.out.println("You Have To Study Html");
+		}
+		
+		break;
+		
+		case "saturday" :
+		{
+			System.out.println("You Have To Study Css");
+		}
+		
+		break;
+		
+		}
+		
+		case "sunday" :
+		{
+			System.out.println("Revice All Topic");
+		}
+		
+		break;
+		
+		}
+		
+		default : System.out.println("You Have To Go to School First");
+		
+      } 
+		
+	}
+}

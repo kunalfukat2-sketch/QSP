@@ -1,0 +1,55 @@
+// Strong Number
+
+class  StrongNumberMethod
+{
+	public static void main(String[] args) 
+	{
+		for ( int i = 1 ; i <= 100000 ; i++ )
+		{
+			if(isStrong(i))
+			{
+				System.out.println(i);
+			}
+		}
+		
+	}
+	
+	public static boolean isStrong( int num )
+	{
+		
+		int sum = 0;
+		int temp = num;
+		
+		if ( num == 0)
+		{
+			return false;
+		}
+		else
+	    {
+		while (temp!=0)
+		{
+			int last = temp % 10;
+			
+			int fact = 1;
+			for (int i = 1 ; i <= last ; i++)
+			{
+				fact = fact*i;
+			}
+			
+			sum = sum + fact;
+			
+			temp = temp/10;
+		}
+		
+		if (sum == num)  
+		{
+		   return true;
+		}
+		else
+		{
+			return false;
+		}
+		
+	}
+	}
+}

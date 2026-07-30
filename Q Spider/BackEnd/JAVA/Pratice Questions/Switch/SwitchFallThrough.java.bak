@@ -1,0 +1,59 @@
+// Taking input form the user and  Checking if the character is a VOWELS or a Consents using Switch statement 
+
+//                            ||***    Fall-Through Behaviour of  Swicth Statement *** ||
+
+
+
+import java.util.Scanner;
+
+class SwitchFallThrough 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Character:");
+		
+		char ch = sc.next().charAt(0);
+		
+		
+		if ( (ch>='a' && ch<='z') || (ch>='A' && ch<='Z') )
+		{
+			switch (ch)
+				
+			{
+			   case 'a' , 'e' , 'i' , 'o' , 'u' , 'A' , 'E' , 'I' , 'O' , 'U' :
+			   //case 'e' :
+			   //case 'i' :
+			   //case 'o' :
+			   //case 'u' :
+			   //case 'A' :
+			   //case 'E' :
+			   //case 'I' :
+			   //case 'O' :
+			   //case 'U' :
+			   
+			   
+				{
+					System.out.println("The Character is vowel");
+					
+				}break;
+				
+				default : 
+					{
+					System.out.println(" The Character is consonent");
+					}
+			   
+			}
+			   
+		}
+		else
+		{
+			System.out.println(" The character is Not a Alphabte !! ");
+		}
+		
+	
+		
+		
+		
+	}
+}

@@ -1,0 +1,20 @@
+// Print the reverse the Number 5 to 1 using all loops .
+
+
+
+// do while 
+class  Pratic2
+{
+	public static void main(String[] args) 
+	{
+		
+		int i = 5;
+		
+		while (i>=1)
+		{
+			System.out.println(i);
+			i--;
+		}
+		
+	}
+}
