@@ -1,0 +1,33 @@
+   //   1 2 3 4
+   //   A B C D
+   //   5 6 7 8
+   //   E F G H
+
+
+class Pattern17
+{
+	public static void main(String[] args) 
+	{
+		int n = 4;
+		
+		int num = 1;
+		
+		char ch = 'A';
+		
+		for (int i = 1; i <=n ; i++ )
+		{
+			for (int j=1;j<=n ;j++ )
+			{
+				if (i%2!=0)
+				{
+					System.out.print(num++ + " ");
+				}
+				else
+				{
+					System.out.print( ch++ + " ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

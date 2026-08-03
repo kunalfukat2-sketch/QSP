@@ -1,0 +1,34 @@
+a 1 2 3
+b c 4 5
+d e f 6
+g h i j
+
+
+     
+
+class Pattern26 
+{
+	public static void main(String[] args) 
+	{
+		int n = 4;
+		int num = 1;
+		char ch = 'a';
+		
+		for (int i = 1; i<=n ;i++ )
+		{
+			for (int j = 1; j<=n ; j++)
+			{
+				if (i>=j)
+				{
+					System.out.print( ch++ + " " );
+				}
+				else
+				{
+					System.out.print( num++ + " " );
+				}
+			}
+			
+			System.out.println();
+		}
+	}
+}

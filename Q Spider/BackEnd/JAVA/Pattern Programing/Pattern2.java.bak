@@ -3,7 +3,8 @@ class Pattern2
 	public static void main(String[] args) 
 	{
 		int n = 5;
-		int num = 1;
+		
+		int num = 2;
 		
 		
 		for (int i=1;i<=n ;i++ )
@@ -11,8 +12,9 @@ class Pattern2
 			 
 			for (int j=1 ; j<=n  ; j++ )
 			{
-				System.out.print(num++ +" ");
-			}
+				System.out.print(num +" ");
+				if (num<=10){System.out.print(" ");}
+				num = num+1;			}
 			
 			System.out.println();
 		}

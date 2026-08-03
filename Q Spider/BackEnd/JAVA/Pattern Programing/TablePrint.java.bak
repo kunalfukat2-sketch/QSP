@@ -1,0 +1,41 @@
+// Print a table in table format
+
+//   4   8   12  16 
+//   
+//   20  24  28  32
+//   
+//   36  40  44  48
+//   
+//   52  56  60  64
+
+class TablePrint
+{
+	public static void main(String[] args) 
+	{
+		
+		int n=4;
+		
+		int num=4;
+		
+		int a=num;
+		
+		for (int i = 1 ; i<=n ; i++ )
+		{
+			for (int j = 1 ; j<=n ;j++ )
+			{
+				System.out.print(a +" ");
+				if(n<=9) System.out.print(" ");
+				
+				a = a+num;
+					
+			}
+			
+			System.out.println();
+		}
+		
+	}
+}
+
+
+
+ 

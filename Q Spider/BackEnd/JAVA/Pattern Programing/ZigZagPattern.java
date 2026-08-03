@@ -1,0 +1,42 @@
+//  1  2  3  4
+//  8  7  6  5
+//  12 11 10 9
+//  16 15 14 13
+
+class ZigZagPattern 
+{
+	public static void main(String[] args) 
+	{
+		int n = 4;
+		
+		int num = 1;
+		
+		for (int i = 1 ; i<=n ; i++ )
+		{
+			for (int j = 1 ; j<=n ; j++ )
+			{
+				if (i%2!=0)
+				{
+					System.out.print( num++ +" ");
+					if(num<=10) System.out.print(" ");
+				}
+				else
+				{
+					System.out.print( num-- +" ");
+					if(num<=10) System.out.print(" ");
+				}	
+			}
+			
+			if (i%2!=0)
+			{
+				num = num+(n-1);
+			}
+			else
+			{
+				num = num+(n+1);
+			}
+			
+			System.out.println();
+		}
+	}
+}

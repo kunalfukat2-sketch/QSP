@@ -1,0 +1,33 @@
+  //  1 2 3 4
+  //  H G F E
+  //  5 6 7 8
+  //  D C B A
+
+class Pattern21 
+{
+	public static void main(String[] args) 
+	{
+		int n = 4;
+		
+		int num = 1; 
+		
+		char ch = (char) ('A'+ (n*n/2)-1);
+		
+		for (int i = 1 ; i<=n ;i++ )
+		{
+			for (int j=1; j<=n ;j++ )
+			{
+				if (i%2!=0)
+				{
+					System.out.print(num++ + " ");
+				}
+				else
+				{
+				   System.out.print(ch-- + " ");	
+				}
+			}
+			
+			System.out.println();
+		}
+	}
+}
