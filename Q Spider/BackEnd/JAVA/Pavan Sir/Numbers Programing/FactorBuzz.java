@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class FactorBuzz
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter a Number:");
+		int num = sc.nextInt();
+		int sum = 0;
+		
+		for (int i = 1 ; i<=num ;i++ ) 
+		{
+			if ((num%i==0 && i%7==0) || (i%10==7))
+			{
+				System.out.println(i);
+			}
+		}
+	
+	}
+}

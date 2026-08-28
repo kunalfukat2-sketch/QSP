@@ -1,0 +1,14 @@
+class Example1 
+{
+	public static void main(String[] args) 
+	{
+	   byte a = 10;
+	   m1(a,20);
+	}
+	
+	public static void m1(int a , byte b)
+	{
+		System.out.println("Demo1");
+	}
+
+}

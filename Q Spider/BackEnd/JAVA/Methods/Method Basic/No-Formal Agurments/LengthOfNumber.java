@@ -1,0 +1,27 @@
+import java.util.Scanner;
+class LengthOfNumber 
+{
+	
+	static int num ; 
+	
+	public static void main(String [] args )
+	{
+		System.out.print("Enter a Number :");
+		num = new Scanner(System.in).nextInt();
+		lengthOfNumber();
+	}
+	
+	public static void lengthOfNumber()
+	{
+		
+		int count = 0;
+		
+		while (num!=0)
+		{
+			count++;
+			
+			num/=10;
+		}
+		System.out.println("The Length of number is " +count);
+	}
+}

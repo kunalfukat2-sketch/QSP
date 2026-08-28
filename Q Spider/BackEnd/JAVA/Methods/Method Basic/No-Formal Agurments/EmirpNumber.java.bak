@@ -1,0 +1,86 @@
+import java.util.Scanner;
+class EmiprNumber 
+{
+	static int num ;
+	
+	public static void main(String[] args) 
+	{
+		System.out.print("Enter a Number :");
+		num = new Scanner(System.in).nextInt();
+		
+		isEmirp();
+		
+	}
+	
+	
+	public static void isPrime()
+	{
+		if (num<=1)
+		{
+			System.out.println("The Number is Not  a EmirpNumber");
+			return;
+		}
+		else
+		{
+			int count = 2;
+		
+		     for (int i = 2 ; i<num ;i++ )
+		     {
+				 if (num%i==0)
+				 {
+					 count++;
+				 }
+		     }
+			 if (count==2)
+			 {
+				 isEmirp();
+			 }
+			 else
+			 {
+				System.out.println("The Number is Not  a EmirpNumber");
+			 }
+		}
+	   
+		
+	}
+	
+	public static void isEmirp()
+	{
+	    int rev = 0;
+		int temp = num ;
+		
+		while (temp!=0)
+		{
+			rev = rev*10+(temp%10);
+			
+			temp/=10;
+		}
+		
+		if (rev==num)
+		{
+			System.out.println("The Number not is a EmirpNumber");
+			return;
+		}
+		else
+		{
+	    	int count = 2;
+	    	
+	    	for(int i = 2;i<rev ;i++ )
+	    	{
+	    		if (rev%i==0)
+	    		{
+	    			count++;
+	    		}
+	    	}
+	    	if (count==2)
+	    	{
+	    		System.out.println("The number is EmirpNumber");
+	    	}
+	    	else
+	    	{
+	    		System.out.println("The number is Not EmirpNumber");
+	    	}
+		}
+		
+	}
+}

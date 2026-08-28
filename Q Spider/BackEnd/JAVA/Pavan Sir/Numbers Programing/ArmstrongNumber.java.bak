@@ -1,0 +1,51 @@
+import java.util.Scanner;
+class ArmstrongNumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Ente a Number:");
+		int num = sc.nextInt();
+		
+		
+		//take a num 
+		//the find a count 
+		//extract the num 
+		//find the base of the power 
+		//delete a number
+		//if sum == num print- Armstrong 
+		//else p- not Armstrong
+		
+		int count = 0;
+		
+		for (int i = num ; i!=0 ;i/=10 )
+		{
+			count++;
+		}
+		
+		int temp = num;
+		int sum = 0;
+		
+		while (temp!=0)
+		{
+			int last = temp%10;
+			
+			int ans = 1;
+			
+			for (int i = 1;i<=count ; i++ )
+			{
+				ans*=last;
+			}
+			sum = sum+ans;
+			
+			temp/=10;
+			
+		}
+		if (sum==num)
+		{
+			System.out.println(num+" is a Armstrong");
+		}
+		else
+			System.out.println(num+"  is  not a Armstrong");
+	}
+}
